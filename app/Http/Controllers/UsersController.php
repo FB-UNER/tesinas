@@ -12,7 +12,7 @@ class UsersController extends Controller {
             ->orderBy('first_name', 'ASC')
             ->get();
 
-        dd($users->toArray());
+
     }
 
     public function getIndex()
@@ -34,9 +34,9 @@ class UsersController extends Controller {
             $row->age = \Carbon\Carbon::parse($row->birthdate)->age;
         }
 
-        dd($result);
 
-        return $result;
+
+        return view('users.index', compact('users'));
     }
 
 } 

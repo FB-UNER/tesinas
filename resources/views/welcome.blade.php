@@ -38,8 +38,8 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Laravel 5</div>
-				<div class="quote">{{ Inspiring::quote() }}</div>
+                <div><a href="admin/users"><img src="{{ asset('img/logoUNER.png') }}"></a></div>
+                <div class="title">Tesinas</div>
 			</div>
 		</div>
 	</body>
