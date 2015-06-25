@@ -39,7 +39,7 @@
 		<div class="container">
 			<div class="content">
                 <div><a href="admin/users"><img src="{{ asset('img/logoUNER.png') }}"></a></div>
-                <div class="title">Tesinas</div>
+                <div class="title">Tesinas - 1.0</div>
 			</div>
 		</div>
 	</body>
