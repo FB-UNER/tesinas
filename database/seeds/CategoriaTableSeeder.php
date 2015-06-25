@@ -7,11 +7,11 @@ class CategoriaTableSeeder extends Seeder {
 
     public function run()
     {
-        $faker = Faker::create();
+        $faker = Faker::create('es_ES');
 
         for($i = 0; $i < 8; $i ++)
         {
-            $descripcion = $faker->realText($maxNbChars = 10, $indexSize = 1);
+            $descripcion = $faker->realText($maxNbChars = 10);
 
             \DB::table('categorias')->insert(array (
                 'descripcion'  => $descripcion
