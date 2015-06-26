@@ -16,7 +16,8 @@ class AlumnoTableSeeder extends Seeder {
 
             \DB::table('alumnos')->insert(array (
                 'apellido'  => $apellido,
-                'nombres'   => $name
+                'nombres'   => $name,
+                'email'     => $faker->unique()->email
             ));
 
         }

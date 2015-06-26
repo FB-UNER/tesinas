@@ -17,6 +17,7 @@ class CreateReferentesTable extends Migration {
 			$table->increments('id');
             $table->string('nombre');
             $table->string('apellido');
+            $table->integer('dni');
 			$table->timestamps();
 		});
 	}
