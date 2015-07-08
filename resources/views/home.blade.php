@@ -11,7 +11,7 @@
                 <div class="panel-heading">Facultad de Bromatología - Tesinas</div>
                 <div class="panel-body">
                     <div>
-                        <a href="TFI/tesinas">
+                        <a href="Tfi/tesinas">
                             <img  src="{{ asset('/css/images/Lupa.png') }}" height="110px" width="122px"/>
                         </a>
                         <a href="abono/abonos" data-toggle="modal">

@@ -13,10 +13,12 @@ class ReferenteTableSeeder extends Seeder {
         {
             $firstName = $faker->firstName;
             $lastName = $faker->lastName;
+            $name = $faker->name;
 
             $id = \DB::table('referentes')->insertGetId(array (
                 'nombre'     => $firstName,
-                'apellido'      => $lastName
+                'apellido'   => $lastName,
+                'full_name'      => "$firstName $lastName"
             ));
         }
     }

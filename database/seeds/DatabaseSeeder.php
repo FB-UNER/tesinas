@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder {
         $this->call('ReferenteTableSeeder');
         $this->call('AlumnoTableSeeder');
         $this->call('TesinaTableSeeder');
+        $this->call('ReferenteTesinaTableSeeder');
 
     }
 

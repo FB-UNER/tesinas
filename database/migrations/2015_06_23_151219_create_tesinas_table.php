@@ -18,10 +18,14 @@ class CreateTesinasTable extends Migration {
             $table->string('titulo');
             $table->integer('alumno_id');
             $table->date('fecha_recepcion');
+            $table->date('fecha_recepcion_director');
             $table->date('fecha_aprobacion_comision');
             $table->integer('director_id');
             $table->integer('co_tutor_id');
             $table->integer('asesor_id');
+
+            //aprobaciones
+            $table->boolean('aprueba_comision_tfi');
 
             //Evaluadores
             $table->integer('evaluador_id_1');

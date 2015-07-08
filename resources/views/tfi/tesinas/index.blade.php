@@ -21,7 +21,7 @@
                     @endif
 
                     <div class="panel-body">
-                        {!! Form::model(Request::all(), ['route' => 'TFI.tesinas.index', 'method' => 'GET', 'class' => 'navbar-form navbar-left pull-right', 'role' => 'search']) !!}
+                        {!! Form::model(Request::all(), ['route' => 'Tfi.tesinas.index', 'method' => 'GET', 'class' => 'navbar-form navbar-left pull-right', 'role' => 'search']) !!}
                         <div class="form-group">
                             {!! Form::text('titulo', null, ['class' => 'form-control', 'placeholder' => 'Nombre de la tesina']) !!}
                         </div>
