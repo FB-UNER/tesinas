@@ -21,7 +21,10 @@ class TesinaTableSeeder extends Seeder {
                 'director_id'                   => $faker->numberBetween($min = 1, $max = 25),
                 'co_tutor_id'                   => $faker->numberBetween($min = 1, $max = 25),
                 'asesor_id'                     => $faker->numberBetween($min = 1, $max = 25),
-                'aprueba_comision_tfi'          => (bool) rand(0, 1)
+                'aprueba_comision_tfi'          => (bool) rand(0, 1),
+                'modificacion_eval_1'           => (bool) rand(0, 1),
+                'modificacion_eval_2'           => (bool) rand(0, 1),
+                'modificacion_eval_3'           => (bool) rand(0, 1)
             ));
 
         }

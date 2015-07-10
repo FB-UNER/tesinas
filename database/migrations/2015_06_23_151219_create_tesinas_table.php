@@ -20,6 +20,7 @@ class CreateTesinasTable extends Migration {
             $table->date('fecha_recepcion');
             $table->date('fecha_recepcion_director');
             $table->date('fecha_aprobacion_comision');
+            $table->date('fecha_defensa');
             $table->integer('director_id');
             $table->integer('co_tutor_id');
             $table->integer('asesor_id');
