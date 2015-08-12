@@ -5,12 +5,12 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
-                    <div class="panel-heading"><h2>Editar tesina:<small>   {{ $tesina->titulo }}</small></h2></div>
+                    <div class="panel-heading">Nueva tesina: {{ $tesina->titulo }}</div>
                     <div class="panel-body">
 
-                        {!! Form::model($tesina, ['route' => ['Tfi.tesinas.update', $tesina], 'method' => 'PUT']) !!}
+                        {!! Form::open(['route' => 'Tfi.tesinas.store', 'method' => 'POST']) !!}
                         @include('tfi.tesinas.partials.fields')
-                        <button type="submit" class="btn-success">Actualizar tesina</button>
+                        <button type="submit" class="btn-success">Guardar</button>
                         {!! Form::close() !!}
                     </div>
                 </div>

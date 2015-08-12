@@ -1,8 +1,10 @@
 <div class="row">
-    <div class="col-xs-12 col-md-8">{!! Form::label('fecha_recepcion', 'Fecha de Recepción') !!}</div>
+    <div class="col-xs-12 col-md-3">{!! Form::label('fecha_recepcion', 'Fecha de Recepción') !!}</div>
     <div class="col-xs-6 col-md-4">{!! Form::date('fecha_recepcion', null, ['class' => 'form-control', 'placeholder' => 'Por favor introduzca el título']) !!}</div>
 </div>
-
+<br>
+<!-- ******* Nombre y Apellido *******  -->
+@if (($action) === 'edit')
 <div class="row">
     <div class="form-group">
         <div class="col-xs-12 col-md-8">{!! Form::label('apellido', 'Apellido') !!}</div>
@@ -11,11 +13,23 @@
         <div class="col-xs-6 col-md-4">{!! Form::text('alumno[nombres]', null, ['class' => 'form-control', 'placeholder' => 'Nombres', 'readonly']) !!}</div>
     </div>
 </div>
+@endif
 
-<div class="form-group">
+@if (($action) === 'create')
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-12 col-md-3">{!! Form::label('alumnos', 'Nombre del Alumno') !!}</div>
+            <div class="col-xs-6 col-md-4">{!! Form::select('id_alumno', $alumnos) !!}</div>
+        </div>
+    </div>
+@endif
+<!-- ******* FIN Nombre y Apellido *******  -->
+
+<br>
+<div class="form-group"><h4>
     {!! Form::label('titulo', 'Título') !!}
     {!! Form::text('titulo', null, ['class' => 'form-control', 'placeholder' => 'Por favor introduzca el título']) !!}
-</div>
+    </h4></div>
 
 <div class="row">
     <div class="col-xs-5 col-md-3">{!! Form::label('director', 'Director') !!}</div>

@@ -14,7 +14,7 @@
                         <a href="Tfi/tesinas">
                             <img  src="{{ asset('/css/images/Lupa.png') }}" height="110px" width="122px"/>
                         </a>
-                        <a href="abono/abonos" data-toggle="modal">
+                        <a href="{{route('Tfi.tesinas.create')}}" data-toggle="modal">
                             <img  src="{{ asset('/css/images/Nuevo.png') }}" height="110px" width="122px"/>
                         </a>
                     </div>
