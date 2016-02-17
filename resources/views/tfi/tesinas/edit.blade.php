@@ -18,3 +18,10 @@
         </div>
     </div>
 @endsection
+
+
+
+@section('scripts')
+    @include('tfi.tesinas.partials.validarModificacion')
+    @include('tfi.tesinas.partials.controlCheckboxDiv')
+@endsection

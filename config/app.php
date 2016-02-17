@@ -136,6 +136,13 @@ return [
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 
+
+        /**
+         * PDF Vendor Service Providers
+         */
+
+        'Barryvdh\DomPDF\ServiceProvider',
+
         /**
          * Vendor Service Providers
          */
@@ -206,6 +213,7 @@ return [
 
         'Form' => 'Collective\Html\FormFacade',
         'Html' => 'Collective\Html\HtmlFacade',
+        'PDF' => 'Barryvdh\DomPDF\Facade',
 
 	],
 
