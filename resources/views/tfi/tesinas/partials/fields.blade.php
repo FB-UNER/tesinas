@@ -7,9 +7,9 @@
 @if (($action) === 'edit')
 <div class="row">
     <div class="form-group">
-        <div class="col-xs-12 col-md-8">{!! Form::label('apellido', 'Apellido') !!}</div>
+        <div class="col-xs-12 col-md-3">{!! Form::label('apellido', 'Apellido') !!}</div>
         <div class="col-xs-6 col-md-4">{!! Form::text('alumno[apellido]', null, ['class' => 'form-control', 'placeholder' => 'Apellido', 'readonly']) !!}</div>
-        <div class="col-xs-12 col-md-8">{!! Form::label('nombres', 'Nombres') !!}</div>
+        <div class="col-xs-12 col-md-3">{!! Form::label('nombres', 'Nombres') !!}</div>
         <div class="col-xs-6 col-md-4">{!! Form::text('alumno[nombres]', null, ['class' => 'form-control', 'placeholder' => 'Nombres', 'readonly']) !!}</div>
     </div>
 </div>

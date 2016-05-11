@@ -37,18 +37,21 @@
                 <ul class="nav navbar-nav navbar-left">
                     <li><a href="/" style="color: #191919"><strong>Inicio</strong></a></li>
                     @if(!Auth::guest())
-                    <li class="dropdown">
-                        <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: #191919"><strong>Tesinas</strong></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{route('Tfi.tesinas.create')}}">Nueva</a></li>
-                            <li><a href="{{route('Tfi.tesinas.index')}}">Buscar</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><strong>Reportes</strong></a></li>
+                        <li class="dropdown">
+                            <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: #191919"><strong>Tesinas</strong></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{route('Tfi.tesinas.create')}}">Nueva</a></li>
+                                <li><a href="{{route('Tfi.tesinas.index')}}">Buscar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <strong>Reportes</strong>
+                            </a>
+                        </li>
                     @endif
+                    <li><a style="font-size: xx-small">Versión: {{Config::get('version.version')}}</a></li>
                 </ul>
-
-
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 						<li><a href="/auth/login">Ingreso</a></li>
