@@ -141,13 +141,13 @@ return [
          * PDF Vendor Service Providers
          */
 
-        'Barryvdh\DomPDF\ServiceProvider',
+        // 'Barryvdh\DomPDF\ServiceProvider', 5.0
+		Barryvdh\DomPDF\ServiceProvider::class,
 
         /**
          * Vendor Service Providers
          */
-
-        'Collective\Html\HtmlServiceProvider',
+		Collective\Html\HtmlServiceProvider::class,
 
 		/*
 		 * Application Service Providers...
@@ -210,10 +210,9 @@ return [
         /**
          * Vendor Aliases
          */
-
-        'Form' => 'Collective\Html\FormFacade',
-        'Html' => 'Collective\Html\HtmlFacade',
-        'PDF' => 'Barryvdh\DomPDF\Facade',
+		'Form' => Collective\Html\FormFacade::class,
+		'Html' => 'Collective\Html\HtmlFacade',
+		'PDF' => 'Barryvdh\DomPDF\Facade'
 
 	],
 
